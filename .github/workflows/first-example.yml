@@ -11,8 +11,11 @@ jobs:
         -   name: Welcome
             run: echo "My first actions in 2024"
 
-        -   name: List files
-            run: ls
+        -   name: List and read file
+            run: |
+                 echo "My first action job"
+                 ls -ltra
+                 cat README.md
 
-        -   name: Read file
-            run: cat README.md
+        -   name: Generate ASCII Artwork
+            run: cowsay -f dragon "Run for cover, I am a Dragon.....y echo fire diablo" >> dragon.txt
